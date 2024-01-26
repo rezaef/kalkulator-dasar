@@ -19,31 +19,31 @@ int main() {
     cout << "2. Pengurangan\n";
     cout << "3. Perkalian\n";
     cout << "4. Pembagian\n";
-    cout << "\nPilih Operator : ";
+    cout << "Pilih Operator : ";
     cin >> op;
     
     switch(op) {
         case 1:
-            cout << "Hasil penjumlahan dari " << num1 << " + " << num2 << " = " << hasilTambah;
+            cout << "\nHasil penjumlahan dari " << num1 << " + " << num2 << " = " << hasilTambah;
             break;
 
         case 2:
-            cout << "Hasil pengurangan: " << num1 - num2;
+            cout << "\nHasil pengurangan dari " << num1 << " - " << num2 << " = " << hasilKurang;
             break;
 
         case 3:
-            cout << "Hasil perkalian: " << num1 * num2;
+            cout << "\nHasil perkalian dari " << num1 << " x " << num2 << " = " << hasilKali;
             break;
 
         case 4:
             if (num2 != 0)
-                cout << "Hasil pembagian: " << num1 / num2;
+                cout << "\nHasil pembagian dari " << num1 << " : " << num2 << " = " << hasilBagi;
             else
-                cout << "Error: Tidak bisa membagi dengan nol!";
+                cout << "\nError: Tidak bisa membagi dengan nol!";
             break;
 
         default:
-            cout << "Operator tidak valid!";
+            cout << "\nOperator tidak valid!";
             break;
     }
 
